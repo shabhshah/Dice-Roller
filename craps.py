@@ -111,7 +111,7 @@ def game():
 				if totalValue == point:
 					print textwrap.fill("You won.")
 					gameState = 0
-				elif totalValue == 7:
+				elif totalValue == "7":
 					print textwrap.fill("You lose.")
 					gameState = 1
 				else:
