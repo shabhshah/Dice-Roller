@@ -5,4 +5,6 @@ A simple and complex dice rolling programs I wrote for my programming class.
 
 *complexdiceroller.py* allows the user to pick the amount of sides on the dice and how many dice to roll. The results are printed along with the sum of the dice.
 
-*craps.py* is a working craps game.
+*craps.py* is a working craps game without betting functionality.
+
+*advancedcraps.py* is a working craps game with betting functionality.
