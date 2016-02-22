@@ -8,3 +8,5 @@ A simple and complex dice rolling programs I wrote for my programming class.
 *craps.py* is a working craps game without betting functionality.
 
 *advancedcraps.py* is a working craps game with betting functionality.
+
+*massdiceroller.py* is a work in progress dice roller which outputs to a designated file the results of a large amount of dice rolls.
