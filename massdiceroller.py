@@ -14,7 +14,7 @@ b = """
 
 def playAnotherTime():
 	while True:
-		playAgain = raw_input("Would you like to roll again? (yes/no): ").lower()
+		playAgain = raw_input("Would you like to do this again? (yes/no): ").lower()
 		if playAgain == "no" or playAgain == "n":
 			print ""
 			print "Goodbye"
@@ -70,11 +70,12 @@ while True:
 		for i in xrange(0, (int(numberOfDice))):
 			value = str(random.choice(possibleDiceValues))
 			die.append(value)
+		fh.write(",".join(die))
 		c = 0
 		for item in die:
 			c += int(item)
-		die.append(str(c))
-		fh.write(",".join(die))
+		fh.write(";")
+		fh.write(str(c))
 		fh.write(b)
 	print ""
 	fh.close()
