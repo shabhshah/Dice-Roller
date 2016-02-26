@@ -41,8 +41,6 @@ for line in open(fileToOpen):
 		x -= 1
 		diceValues.append(individualRollsOfDice[x])
 
-print diceValues
-
 while True:
 	lookFor = raw_input("What number would you like to look for?: ")
 	try:
