@@ -38,8 +38,8 @@ for line in open(fileToOpen):
 
 	x = int(numberOfDice)
 	for i in xrange(0, int(numberOfDice)):
-		diceValues.append(individualRollsOfDice[x])
 		x -= 1
+		diceValues.append(individualRollsOfDice[x])
 
 print diceValues
 
