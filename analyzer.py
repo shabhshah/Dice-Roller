@@ -28,7 +28,7 @@ while True:
 diceValues = []
 
 for line in open(fileToOpen):
-	line = line.strip
+	line = line.strip()
 
 	mainParts = line.split(';')
 	sumOfDice = mainParts[1]
@@ -37,9 +37,11 @@ for line in open(fileToOpen):
 	individualRollsOfDice = rollsOfDice.split(',')
 
 	x = int(numberOfDice)
-	for i in xrange(int(numberOfDice)):
+	for i in xrange(0, int(numberOfDice)):
 		diceValues.append(individualRollsOfDice[x])
 		x -= 1
+
+print diceValues
 
 while True:
 	lookFor = raw_input("What number would you like to look for?: ")
@@ -50,7 +52,7 @@ while True:
 	else:
 		break
 
-a = diceValues.count(int(lookFor))
-b = float(float(a)/float(len(diceValues)))
+a = diceValues.count(str(lookFor))
+b = float(float(float(a)/float(len(diceValues)))*100)
 print "The number of times " + str(lookFor) + " appears is " + str(a) + "."
 print "The percentage that " + str(lookFor) + " appears is " + str(b) + "%."
