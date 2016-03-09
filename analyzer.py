@@ -26,6 +26,7 @@ while True:
 		break
 
 diceValues = []
+pbar = ProgressBar()
 
 for line in open(fileToOpen):
 	line = line.strip()
